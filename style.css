@@ -77,3 +77,47 @@ video{
      border: none;
 
  }
+
+ button{
+    padding: 15px 20px;
+    width: 15%;
+    height: 5%;
+    background: none;
+  }
+  
+  button::before{
+    
+  }
+  
+  button:hover{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  }
+  
+  button:focus{
+    outline:none;
+  }
+  
+  .border{
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+  
+  .border-gradient{
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    transition: border-image-source 3s ease-in-out infinite;
+  }
+  
+  .border-gradient:hover{
+    border-image-source: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  }
+  
+  
+  /*   @keyframes border-image-source{
+      0%{
+        border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+      }
+      50%{
+       border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+      }
+    } */
