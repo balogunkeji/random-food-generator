@@ -27,9 +27,9 @@
 - create a pull request and leave a comment
 - then wait for your pull request to be accepted
 
-4. if after this you still do understand how to collaborate on github, then watch this video [collaborating on Github](https://www.youtube.com/watch?v=MnUd31TvBoU)
-
-## steps for writing an acceptable commit msg
+4. if after this you still do understand how to collaborate on github, then watch this video [collaborating on Github](https://www.youtube.com/watch?v=HbSjyU2vf6Y)
+---
+## Steps for writing an acceptable commit msg
 
 - although `git commit -m "message here"` is not advisable, we will use it for the sake of speed and the bias that its a small project
 - in your msg answer this questions
