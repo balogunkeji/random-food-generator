@@ -41,17 +41,39 @@ video{
      /* transform: translate(-50%,-50%); */
  }
 
- .text h1{
-     font-size: 6rem;
-     padding-bottom: 2px;
- }
-
  .text p{
      font-size: 5rem;
+     white-space: nowrap;
+     padding-bottom: 2px;
+     margin-top: 5px;
+     overflow: hidden;
+     word-spacing: 5px;
+     transform: translateY(-50%);
+     letter-spacing: .15em;
+     animation: typing 4s steps(40,end), blink-caret .75s step-end infinite;
+     border-right: .15em solid rgb(0, 238, 255);
+ }
+
+ @keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 24em;
+    }
+ }
+
+ @keyframes blink-caret{
+    from { border-right-color: rgba(225, 225, 225, .75);
+ }
+ to{ border-right-color: transparent;}
+}
+ .text h1{
+     font-size: 6rem;
+     margin-bottom: 10px;
  }
 
  .text button{
      border: none;
-     outl
-     ine
+
  }
