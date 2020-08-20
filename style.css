@@ -22,6 +22,15 @@ video{
     overflow: hidden;
 }
 
+.container{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	min-height: 100vh;
+}
+
 .text-overlay{
     position: fixed;
     width: 100vw;
@@ -36,7 +45,7 @@ video{
  .text{
      position: relative;
      left: 30%;
-     top: 50%;
+     top: 40%;
      color: white;
      letter-spacing: 2px;
      /* transform: translate(-50%,-50%); */
@@ -106,13 +115,6 @@ button:focus{
   outline:none;
 }
 
-.border{
-  border: 4px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-}
-
 .border-gradient{
   border: 4px solid;
   border-image-slice: 1;
@@ -125,22 +127,110 @@ button:focus{
   border-image-source: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
+img {
+	max-width: 100%;
+}
 
-  /* @-webkit-keyframes border-image-source{
-    0%{
-      border-image-source: linear-gradient(to left, #00C853, #B2FF59);
-    }
-    50%{
-     border-image-source: linear-gradient(to left, #00C853, #B2FF59);
-    }
-  }
+p {
+	margin-bottom: 5p}
 
+li {
+	margin-bottom: 0;
+}
 
-  @keyframes border-image-source{
-    0%{
-      border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+.meal {
+	margin: 20px 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .text{
+
+        position: relative;
+        left: 53%;
+        top: 50%;
+        color: white;
+        letter-spacing: 2px;
+        transform: translate(-50%,-50%);
     }
-    50%{
-     border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+
+    .text p{
+        font-size: 3rem;
     }
-  } */
+    .text h1{
+        font-size: 5rem;
+    }
+   
+    .text button{
+     font-size: 2rem;
+     width: 30%;
+   }
+}
+
+@media screen and (max-width: 480px) {
+
+	.text{
+
+        position: relative;
+        left: 53%;
+        top: 50%;
+        color: white;
+        letter-spacing: 2px;
+        transform: translate(-50%,-50%);
+    }
+
+    .text p{
+        font-size: 1.7rem;
+    }
+    .text h1{
+        font-size: 4rem;
+    }
+   
+    .text button{
+     font-size: 1.5rem;
+     width: 40%;
+   }
+}
+
+@media screen and (max-width: 320px) {
+
+	.text{
+
+        position: relative;
+        left: 53%;
+        top: 50%;
+        color: white;
+        letter-spacing: 2px;
+        transform: translate(-50%,-50%);
+    }
+
+    .text p{
+        font-size: 1.2rem;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+   
+    .text button{
+     font-size: 1rem;
+     width: 45%;
+   }
+}
