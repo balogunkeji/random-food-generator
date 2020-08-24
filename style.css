@@ -44,8 +44,8 @@ video{
 
  .text{
      position: relative;
-     left: 30%;
-     top: 40%;
+     left: 80%;
+     top: 50%;
      color: white;
      letter-spacing: 2px;
      transform: translate(-50%,-50%);
@@ -99,7 +99,7 @@ video{
 
   button{
   padding: 15px 20px;
-  width: 30%;
+  width: 15%;
   border: none;
   height: 5%;
   background: none;
