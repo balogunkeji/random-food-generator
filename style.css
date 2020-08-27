@@ -13,7 +13,7 @@ html{
 
 video{
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -161,6 +161,65 @@ li {
 	width: 100%;
 	height: 100%;
 }
+
+/***************************
+    Random Food Styles
+***************************/
+
+img {
+    width: 30%;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 0.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, li {
+    font-size: 1.5rem;
+}
+
+#foodName, .list-heading, #instrHeading, #video {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(243, 79, 4);
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.c-and-r, .list-heading, #instrHeading {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.list-heading, #instrHeading {
+    margin-bottom: 1rem;
+}
+
+#instrHeading {
+    margin-top: 1rem;
+}
+
+#video {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.video-div {
+    margin: auto;
+    display: flex;
+}
+
+.video-inner {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
 
 @media screen and (max-width: 1100px) {
     .text{
