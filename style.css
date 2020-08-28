@@ -167,7 +167,7 @@ li {
 ***************************/
 
 img {
-    width: 30%;
+    width: 40%;
     margin: 2rem auto;
     display: block;
     border-radius: 0.4rem;
@@ -267,9 +267,9 @@ p, li {
         font-size: 4rem;
     }
    
-    .text button{
-     font-size: 1.5rem;
-     width: 40%;
+    .text button, .btn button{
+     font-size: 1.7rem;
+     width: 50%;
    }
 }
 
@@ -292,7 +292,7 @@ p, li {
         font-size: 3rem;
     }
    
-    .text button{
+    .text button, .btn button{
      font-size: 1rem;
      width: 45%;
    }

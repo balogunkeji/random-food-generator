@@ -29,9 +29,9 @@ function showRandomMeal() {
         let mealIngredients = [];
         // DOM insertion
         output.innerHTML = `
-            <h1 style="margin: 3rem auto 0 auto; text-align: center;">Feeling Hungry?</h1>
-            <p class="typewritter" style= "text-align: center;">Get a random meal by clicking below</p>
-            <button id="btn" class=" border-gradient show" style="display: block; margin: 2rem auto; color: black; max-width: 50%; padding: 15px" >Get Meal 🍔</button>
+            <h1 class= "h1" style="margin: 3rem auto 0 auto; font-size:5rem; text-align: center;">Feeling Hungry?</h1>
+            <p class="typewritter" style= "text-align: center; font-size:3rem;">Get a random meal by clicking below</p>
+            <button id="btn" class=" border-gradient show btn" style="display: block; margin: 2rem auto; color: black; width: 20%; padding: 15px 18px" >Get Meal 🍔</button>
             <img src="${data.meals[0].strMealThumb}">
             <h2 id="foodName">${data.meals[0].strMeal}</h2>
             <p class="c-and-r"> Category: ${data.meals[0].strCategory}</p>
