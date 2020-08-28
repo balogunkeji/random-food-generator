@@ -29,7 +29,9 @@ function showRandomMeal() {
         let mealIngredients = [];
         // DOM insertion
         output.innerHTML = `
-            <button id="btn" class=" border-gradient show" style="display: block; margin: 2rem auto; width: 20%; color: black;" >Get Meal 🍔</button>
+            <h1 style="margin: 3rem auto 0 auto; text-align: center;">Feeling Hungry?</h1>
+            <p class="typewritter" style= "text-align: center;">Get a random meal by clicking below</p>
+            <button id="btn" class=" border-gradient show" style="display: block; margin: 2rem auto; color: black; max-width: 50%; padding: 15px" >Get Meal 🍔</button>
             <img src="${data.meals[0].strMealThumb}">
             <h2 id="foodName">${data.meals[0].strMeal}</h2>
             <p class="c-and-r"> Category: ${data.meals[0].strCategory}</p>
@@ -51,7 +53,7 @@ function showRandomMeal() {
         mealIngredients.forEach(function(ingredient) {
             output.innerHTML += `
             <ul>
-                <li>${ingredient}</li>
+                <li style="list-style-type: none; font-size: 1.8rem;">${ingredient}</li>
             </ul>
             `;
         });
@@ -63,7 +65,7 @@ function showRandomMeal() {
         instructionsArr.forEach(function(instruction) {
             output.innerHTML += `
             <ul>
-                <li>${instruction}</li>
+                <li style="list-style-type: none; font-size: 1.8rem;">${instruction}</li>
             </ul>
             `;
         });
